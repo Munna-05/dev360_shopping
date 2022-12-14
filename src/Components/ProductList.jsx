@@ -57,7 +57,7 @@ export default function ProductList() {
 
                 <div className="mt-6 grid grid-cols-5 gap-y-10 p-5 bg-neutral-100 rounded-lg shadow shadow-xl shadow-black gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div onClick={toDetails} key={product.id} className="group border border-black relative">
+                        <div onClick={toDetails} key={product.id} className="group  relative">
                             <div  className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
                                 <img 
                                     src={product.imageSrc}
