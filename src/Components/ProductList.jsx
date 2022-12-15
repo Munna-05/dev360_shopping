@@ -55,9 +55,9 @@ export default function ProductList() {
             <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                 <h2 className="text-2xl font-bold tracking-tight mb-16 text-gray-900">Customers also purchased</h2>
 
-                <div className="mt-6 grid grid-cols-5 gap-y-10 p-5 bg-neutral-100 rounded-lg shadow shadow-xl shadow-black gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-4 gap-y-10 p-5 bg-neutral-100 rounded-lg shadow shadow-xl shadow-black gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div onClick={toDetails} key={product.id} className="group  relative">
+                        <div onClick={toDetails} key={product.id} className=" relative ">
                             <div  className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
                                 <img 
                                     src={product.imageSrc}
